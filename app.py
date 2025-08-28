@@ -27,7 +27,7 @@ app = FastAPI()
 # Allow frontend (index.html) to call backend
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["https://aihumanizerforeveryone.netlify.app/"],  # for dev, allow all
+    allow_origins=["*"],  # for dev, allow all
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
