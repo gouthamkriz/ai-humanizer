@@ -229,6 +229,7 @@
         class TextHumanizer {
             constructor() {
                 // this.apiKey = "";
+                this.backendUrl = "https://ai-humanizer-ue4z.onrender.com/"; // Render URL
                 this.apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-05-20:generateContent?key=${this.apiKey}`;
                 this.initializeElements();
                 this.attachEventListeners();
