@@ -27,7 +27,7 @@ app = FastAPI()
 # Allow frontend (index.html) to call backend
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # for dev, allow all
+    allow_origins=["https://preeminent-pixie-502079.netlify.app/"],  # for dev, allow all
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
